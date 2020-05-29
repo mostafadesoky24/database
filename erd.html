@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Entity Relationship Modeling</title>
+  </head>
+  <body>
+    <!-- Nav Bar-->
+    <div class="topnav">
+      <a href="index.html">Home</a>
+      <a class="active" href="erd.html">ERD</a>
+      <a href="erd-mapping.html">ERD Mapping</a>
+      <a href="sql.html">SQL</a>
+      <a href="normalization.html">Normalization</a>
+    </div>
+
+    <h2>Entity Relationship Modeling</h2>
+
+    <div id="erd-content">
+      <p>
+        <strong>Entity-Relationship Diagram (ERD):</strong> identifies
+        information required by the business by displaying the relevant entities
+        and the relationships between them.
+      </p>
+      <br />
+      <br />
+
+      <h3>Definitions</h3>
+      <p>
+        <strong>Entity</strong> - An entity is a thing in the real world with an
+        independent existence. Physical existence (for example, a particular
+        person, car) or conceptual existence (for instance, a job, or a
+        university course). Types of entities: Weak- Regular
+      </p>
+      <br>
+
+      <p>
+        <strong>Entity Instance </strong> - An instance is a particular
+        occurrence of an entity.  For example, each person is an instance of an
+        entity, each car is an instance of an entity, etc.
+      </p>
+      <br>
+      <p>
+        <strong>Attribute </strong> - The particular properties that describe the entity. An EMPLOYEE entity may be described by the employee’s name, age, address and salary attributes.
+      </p>
+      <br>
+      <br>
+
+      <h3>Types of Attributes</h3>
+      <p>
+        <strong>Key:</strong> an attribute whose values are distinct (unique) for each entity and can be used to uniquely identify the record
+
+      </p>
+      <br>
+
+      <p>
+        <strong>Multi-valued: </strong> has a set of values for the same entity instance
+      </p>
+      <br>
+      <p>
+        <strong>Composite: </strong> can be divided into smaller subparts
+      </p>
+      
+      <br>
+      <p>
+        <strong>Derived: </strong> can be calculated from another attribute or entity
+
+      </p>
+      
+      <br>
+      <p>
+        <strong>Single/Simple: </strong> Attributes that are not divisible and have a single value for a particular entity instance
+      </p>
+      <br>
+
+      <h3>Key Attribute</h3>
+      <p>
+        <strong>Single Key: </strong> For example, SSN of EMPLOYEE
+      </p>
+      <br>
+
+      <p>
+        <strong>Composite Key: </strong> the combination of the attribute values that together form a key and must be distinct for each entity. For example, ID and Application_no
+      </p>
+      <br>
+      <p>
+        <strong>Candidate Key: </strong> when an entity type has more than one key, those are candidate keys
+      </p>
+      <br>
+      <br>
+
+
+      <h3>Relationships</h3>
+      <img src="./images/degree-of-relationship.png">
+      <br>
+      <br>
+      <img src="./images/cardinality-ratio.png">
+      <br>
+      <br>
+      <img src="./images/particpation.png">
+      
+    </div>
+
+    <div></div>
+  </body>
+</html>

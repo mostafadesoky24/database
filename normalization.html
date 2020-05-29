@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Normalization</title>
+  </head>
+  <body>
+    <!-- Nav Bar-->
+    <div class="topnav">
+      <a href="index.html">Home</a>
+      <a href="erd.html">ERD</a>
+      <a href="erd-mapping.html">ERD Mapping</a>
+      <a href="sql.html">SQL</a>
+      <a class="active" href="normalization.html">Normalization</a>
+    </div>
+
+    <div id="header">
+      <h2>Normalization</h2>
+      <p>
+        <strong>Normalization of data-</strong> a process that takes a table
+        through a series of tests (normal forms) to certify the goodness of a
+        design and thus to minimize redundancy and anomalies (insert, update,
+        delete anomalies)
+      </p>
+      <h4>Why do we need Normalization?</h4>
+      <img src="./images/normaliztion.png" width="700" height="700" />
+    </div>
+
+    <div id="normaliztion-avoid">
+      <h4>Normalization Avoids</h4>
+      <ul>
+        <li>Duplication of Data</li>
+        <br />
+        <li>Insert Anomaly</li>
+        <br />
+        <li>Delete Anomaly</li>
+        <br />
+        <li>Update Anomaly</li>
+        <br />
+        <li>Frequent Null Values</li>
+        <br />
+      </ul>
+
+      <p>
+        <strong>Normalization:</strong> The process of decomposing
+        unsatisfactory "bad" relations by breaking up their attributes into
+        smaller relations.
+      </p>
+      <p>
+        <strong>Normal form:</strong> Condition using keys and FDs of a relation
+        to certify whether a relation schema is in a particular normal form.
+      </p>
+      <br />
+    </div>
+
+    <table id="database-table">
+      <!-- Table Header -->
+      <tr>
+        <th></th>
+        <th>First Normal Form (1NF)</th>
+        <th>Second Normal Form (2NF)</th>
+        <th>Third Normal Form (3NF)</th>
+      </tr>
+
+      <tr>
+        <td>Defination</td>
+        <td>
+          A relation is in 1NF if it contains no multivalued, repeating groups
+          or composite attributes
+        </td>
+        <td>
+          A relation is in 2NF if it is in 1NF and every nonkey attribute is not
+          partially dependent on the primary key
+        </td>
+        <td>
+          A relation is in 3NF if it is in 2NF and no transitive dependencies
+          exist
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          To put a relation in
+        </td>
+        <td>
+          - Remove each repeating group and place it in a new table carrying the
+          PK as a FK<br /><br />
+          - Remove each multivalued attribute and place it in a new table
+          carrying the PK as a FK<br /><br />
+          - Put composite attribute subparts each in a column when necessary<br /><br />
+        </td>
+        <td>
+          Remove partial functional dependent non-keys carrying the key they
+          depend on and place them in a new table
+        </td>
+        <td>
+          Remove the nonkey attributes carrying the nonkey attribute they depend
+          on and place them in a new table. (Hint: leave the nonkey they depend
+          on in the same table as well)
+        </td>
+      </tr>
+    </table>
+    <br /><br /><br />
+  </body>
+</html>

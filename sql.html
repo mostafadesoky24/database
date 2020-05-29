@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Structured Query Language (SQL)</title>
+  </head>
+  <body>
+    <!-- Nav Bar-->
+    <div class="topnav">
+      <a href="index.html">Home</a>
+      <a href="erd.html">ERD</a>
+      <a href="erd-mapping.html">ERD Mapping</a>
+      <a class="active" href="sql.html">SQL</a>
+      <a href="normalization.html">Normalization</a>
+    </div>
+
+    <div id="header">
+      <h2>Structured Query Language (SQL)</h2>
+      <h4>Database Schema</h4>
+      <p>
+        <strong>A schema</strong> is a group of related objects in a database.
+        There is one owner of a schema who has access to manipulate the
+        structure of any object in the schema. A schema does not represent a
+        person, although the schema is associated with a user that resides in
+        the database.
+      </p>
+      <br />
+      <ul>
+        <li>Data Definition Language (DDL)</li><br>
+        <li>Data Manipulation Language (DML)</li><br>
+        <li>Data Control Language (DCL)</li><br>
+      </ul>
+    </div>
+
+    <div id="data-schema">
+      <h4>Data Definition Language (DDL)</h4>
+      <ul>
+        <li>
+          CREATE Command -- ( CREATE TABLE table_name (column1 DATA_TYPE
+          [CONS_TYPE CONS_NAME], column2 DATA_TYPE [CONS_TYPE CONS_NAME],... ) )
+        </li><br>
+        <li>
+          ALTER Command -- ( ALTER TABLE table_name ADD column_name datatype -
+          ALTER TABLE table_name DROP COLUMN column_name )
+        </li><br>
+        <li>DROP Command -- ( DROP TABLE table_name )</li><br>
+        <li>TRUNCATE Command -- ( TRUNCATE TABLE table_name )</li><br>
+      </ul>
+    </div>
+
+    <div id="data-schema">
+      <h4>Data Manipulation Language (DML)</h4>
+      <ul>
+        <li>
+          INSERT Command -- ( INSERT INTO table_name (column1, column2,
+          ...)VALUES (value1, value2, ...) )
+        </li><br>
+        <li>
+          UPDATE Command -- ( UPDATE table_name SET column_1= newvalue,
+          column_2=new value WHERE condition)
+        </li><br>
+        <li>
+          DELETE Command -- ( DELETE FROM table_name WHERE condition )
+        </li><br>
+        <li>
+          SELECT Command -- ( SELECT "attribute list " FROM "table list" WHERE
+          "condition" ORDER BY "attribute list " )
+        </li><br>
+      </ul>
+    </div>
+
+    <div id="data-schema">
+      <h4>Data Control Language (DCL)</h4>
+      <ul>
+        <li>
+          Grant Command -- ( GRANT SELECT ON TABLE employees TO Ahmed )
+        </li><br>
+        <li>
+          Revoke Command -- ( REVOKE SELECT ON TABLE employees FROM Ahmed )
+        </li><br>
+      </ul>
+    </div>
+  </body>
+</html>
